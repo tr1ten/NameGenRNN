@@ -1,2 +1,2 @@
 # NameGenRNN
-LSTM Name Generator Model trained on lakh+ names .
+LSTM Name Generator Model (API) trained on 100K+ names [demo](https://namgen.herokuapp.com/).
