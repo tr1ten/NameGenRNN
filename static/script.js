@@ -23,7 +23,6 @@ const generateOutput = async () => {
         n: (resultEl.value),
     }))
     body = await res.json()
-    console.log(body)
     
     for (nam of body.names) {
         li = document.createElement('li')
@@ -38,7 +37,6 @@ const generateOutput = async () => {
 btn.addEventListener('click', ()=>{
     namesUl.innerHTML = '';
     loader.style.display = 'block';
-    console.log('changing style of loader',loader.style.display)
     generateOutput().then(()=>{
         loader.style.display = "none"; 
     })

@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: #f2e9e4;
-    overflow-y: hidden;
+    overflow-y: scroll;
     height: 100vh;
     width: 100vw;
 }
