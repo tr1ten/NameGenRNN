@@ -1,0 +1,1 @@
+{"rnn_layers": 3, "rnn_size": 128, "rnn_bidirectional": false, "max_length": 8, "max_words": 10000, "dim_embeddings": 100, "word_level": false, "single_text": false, "name": "lstm-allname", "save_to": "/content/drive/MyDrive/colab-data/checkpoints/nlp"}

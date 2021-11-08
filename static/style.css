@@ -1,0 +1,151 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #f2e9e4;
+    overflow-y: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 10px;
+    background-color: #ff758f;
+    border-radius: 10px;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;
+}
+
+.generate {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container h1 {
+    font-size: xx-large;
+    color: #ffb3c1;
+}
+
+.display ul {
+    display: flex;
+    margin: 4px;
+    flex-wrap: wrap;
+}
+
+.display ul li {
+    padding: 1em;
+    margin: 1em;
+    list-style: none;
+    border-radius: 2em;
+    background-color: pink;
+}
+
+button {
+    border: none;
+    background-color: #63A46C;
+    border-radius: 10px;
+    padding: 1.2em;
+    margin: 1em;
+    color: white;
+    font-size: 0.9rem;
+}
+
+button:hover {
+    cursor: pointer;
+    position: relative;
+    top: -2px;
+    background-color: #ffccd5;
+    color: black;
+}
+
+.parameters {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+}
+
+.generate input {
+    border-radius: 10px;
+    margin: 0.9em;
+    padding: 1em;
+    width: max-content;
+}
+
+.generate input:focus {
+    outline: none !important;
+    border: 1px solid #c9184a;
+    box-shadow: 0 0 10px #ffccd5;
+}
+
+.p1, .p2 {
+    color: #ffb3c1;
+    margin: auto;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.slidecontainer {
+    margin: 5px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slider {
+    -webkit-appearance: none;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.loader {
+    display: none;
+    margin: 3px;
+    border: 0.6em solid #f3f3f3;
+    border-top: 0.6em solid #c9184a;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
